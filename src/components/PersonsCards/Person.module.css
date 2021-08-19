@@ -1,0 +1,15 @@
+.card {
+	box-sizing: border-box;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid #DFDFDF;
+	border-radius: 4px;
+	padding: 20px 30px;
+}
+
+.card-line {
+    margin: 8px 0;
+}
+
+.card-line span {
+    font-weight: 500;
+}

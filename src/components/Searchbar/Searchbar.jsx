@@ -7,7 +7,7 @@ import classes from './Searchbar.module.css';
 
 const Searchbar = () =>  (
     <div className={classes.searchbar}>
-        <Input />
+        <Input type="text" placeholder="Enter text"/>
         <Button className={classes['search-button']} variant="button--orrange" content="Search"/>
     </div>
 );

@@ -1,0 +1,14 @@
+.persons-screen {
+    padding: 60px 0;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+}
+
+.list-item {
+    box-sizing: border-box;
+    padding: 20px;
+}
