@@ -1,9 +1,7 @@
 import React from 'react';
+import { useParams, Route } from 'react-router-dom';
 
-import Card from './Card';
-import Wrapper from '../UI/Wrapper';
-
-import classes from './Cards.module.css';
+import Details from './Details';
 import place1 from '../../assets/images/place1.jpg';
 import place2 from '../../assets/images/place2.jpg';
 import place3 from '../../assets/images/place3.jpg';
@@ -80,19 +78,15 @@ const apparts = [
     }
 ];
 
-const Cards = () => (
-    <div className={classes['plates-screen']}>
-        <Wrapper>
-            <h1 className="heading">Appartments</h1>
-            <div  className={classes.plates}>
-                { apparts.map( (item) => 
-                    <div key={item.id} className={classes.item}>
-                        <Card items={item} />
-                    </div>
-                )}
-            </div>
-        </Wrapper>
-    </div>
-);
+const CardDetail = () => {
+    const params = useParams();
+    const appart = apparts.find( item => item.id === params.appartId);
 
-export default Cards;
+    return (
+        <Route path={`/components/${params.appartId}`}>
+            <Details item={appart} />
+        </Route>
+    );
+};
+
+export default CardDetail;

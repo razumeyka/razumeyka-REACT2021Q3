@@ -1,0 +1,33 @@
+.header {
+    background: #1cbe56;
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.nav-item {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px 20px;
+}
+
+.nav-item a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: #f0a705;
+}
+
+.nav-item a.nav-item-active {
+    color: #f0a705;
+}

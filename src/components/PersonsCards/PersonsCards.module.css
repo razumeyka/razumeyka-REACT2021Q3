@@ -1,11 +1,7 @@
-.persons-screen {
-    padding: 60px 0;
-}
-
 .list {
     display: flex;
     flex-wrap: wrap;
-    margin: -20px;
+    margin: 40px -20px;
 }
 
 .list-item {

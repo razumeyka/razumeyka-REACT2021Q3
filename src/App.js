@@ -1,27 +1,51 @@
-import React, {useState} from 'react';
+import React from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
 
-import Searchbar from './components/Searchbar/Searchbar';
-import Cards from './components/Cards/Cards';
-import Form from './components/Form/Form';
-import PersonsCards from './components/PersonsCards/PersonsCards';
+import Header from './components/Header/Header';
+import Container from './components/UI/Container';
+import Welcome from './components/Welcome/Welcome';
+import ComponentsTask from './components/Pages/ComponentsTask';
+import CardDetail from './components/Cards/CardDetail';
+import FormsTask from './components/Pages/FormsTask';
 import Characters from './components/Characters/Characters';
+import NotFound from './components/Pages/NotFound';
 	
-const App = () => {
-    const [requests, setRequests] = useState([]);
-
-    const saveNewRequest = (user) => {
-        setRequests( prevState => [...prevState, user]);
-    };
-
-    return (
-        <div className="rss-app">
-            <Searchbar />
-            <Cards />
-            <Form saveRequests={saveNewRequest} />
-            <PersonsCards items={requests}/>
-            <Characters />
-        </div>
-    )
-};
+const App = () => (
+    <>
+        <Switch>
+            <Route path="/" exact>
+                <Redirect to="/about" />
+            </Route>
+            <Route path="/about">
+                <Container>
+                    <Header />
+                    <Welcome />
+                </Container>
+            </Route>
+            <Route path="/components" exact>
+                <Header />
+                <ComponentsTask />
+            </Route>
+            <Route path="/components/:appartId">
+                <Header />
+                <CardDetail />
+            </Route>
+            <Route path="/forms">
+                <Header />
+                <FormsTask />
+            </Route>
+            <Route path="/api">
+                <Header />
+                <Characters />
+            </Route>
+            <Route path="*">
+                <Container>
+                    <Header />
+                    <NotFound />
+                </Container>
+            </Route>
+        </Switch>
+    </>
+)
 
 export default App;
