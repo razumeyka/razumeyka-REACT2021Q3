@@ -31,7 +31,17 @@ module.exports = {
 		"react-hooks/exhaustive-deps": "warn",
 		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
 		"arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
-		"react/destructuring-assignment": [ "error", "never" ]
+		"react/destructuring-assignment": [ "error", "never" ],
+		"jsx-a11y/label-has-associated-control": [ "error", {
+			"required": {
+				"some": [ "nesting", "id"  ]
+			}
+		}],
+		"jsx-a11y/label-has-for": [ "error", {
+			"required": {
+				"some": [ "nesting", "id"  ]
+			}
+		}],
 		// "no-plusplus": "off",
 		// "no-console": "warn",
 		// "indent": ["warn", 2, {
