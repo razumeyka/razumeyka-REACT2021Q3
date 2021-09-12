@@ -1,0 +1,28 @@
+.characters-screen {
+    text-align: center;
+}
+
+.sort-line {
+    text-align: left;
+    max-width: 260px;
+    margin-top: 50px;
+}
+
+.sort-line span {
+    color: #acacac;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px -10px -10px;
+}
+
+.list-item {
+    box-sizing: border-box;
+    width: 20%;
+    padding: 10px;
+}

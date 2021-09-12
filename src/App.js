@@ -4,6 +4,7 @@ import Searchbar from './components/Searchbar/Searchbar';
 import Cards from './components/Cards/Cards';
 import Form from './components/Form/Form';
 import PersonsCards from './components/PersonsCards/PersonsCards';
+import Characters from './components/Characters/Characters';
 	
 const App = () => {
     const [requests, setRequests] = useState([]);
@@ -18,6 +19,7 @@ const App = () => {
             <Cards />
             <Form saveRequests={saveNewRequest} />
             <PersonsCards items={requests}/>
+            <Characters />
         </div>
     )
 };

@@ -1,0 +1,31 @@
+.list {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.button {
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 1px solid #f0ae19;
+}
+
+.button-active {
+    border: 1px solid #f0ae19;
+}
