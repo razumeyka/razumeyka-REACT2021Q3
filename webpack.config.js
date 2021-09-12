@@ -13,7 +13,8 @@ const devServer = (isDev) => !isDev ? {} : {
 		hot: true,
 		port: 3000,
 		writeToDisk: true,
-		contentBase: path.join(__dirname, './dist')
+		contentBase: path.join(__dirname, './dist'),
+		historyApiFallback: true,
 	},
 };
 
@@ -25,10 +26,10 @@ module.exports = ({ development }) => ({
 	entry: './src/index.js',
 	output: {
 		path: path.resolve(__dirname, './dist'),
+		publicPath: '/',
 		filename: 'bundle.js',
-		publicPath: '/dist/',
 		assetModuleFilename: 'assets/images/[hash][ext]',
-		clean: true
+		clean: true,
 	},
 	...devServer(development),
 	resolve: {

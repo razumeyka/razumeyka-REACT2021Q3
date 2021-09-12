@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Button from '../UI/Button';
 
@@ -7,7 +8,7 @@ import classes from './Card.module.css';
 
 const Card = (props) => (
     <div className={classes.plate}>
-		<a href="#noref" className={classes.photo}>
+		<Link to={`/components/${props.items.id}`} className={classes.photo}>
 			<div className={classes.favorite}>
 				<svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 485 485" xmlSpace="preserve">
 					{/* <style>
@@ -26,9 +27,9 @@ const Card = (props) => (
 				</svg>
 			</div>
 			<img src={props.items.picture} alt="goods" />
-		</a>
+		</Link>
 		<div className={classes.info}>
-			<a href="#noref" className={classes.name}>{props.items.name}</a>
+			<Link to={`/components/${props.id}`} className={classes.name}>{props.items.name}</Link>
 			<div className={classes.prices}>
 				<div className={classes.price}>Price: {props.items.price}</div>
 				<div className={classes['credit-price']}>{props.items.credit}</div>

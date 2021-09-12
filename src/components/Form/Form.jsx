@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-import Wrapper from '../UI/Wrapper';
 // import Input from '../UI/Input';
 import Switch from '../UI/Switch';
 import Checkbox from '../UI/Checkbox';
@@ -102,7 +101,7 @@ const Form = (props) => {
     };
 
     return (
-        <Wrapper>
+        <>
             { isModal && <Modal message="Your request is saved" onClose={modalCloseHandler} /> }
             <div className={classes.form}>
                 <h3 className={classes['form-heading']}>Leave a request for consultation</h3>
@@ -164,7 +163,7 @@ const Form = (props) => {
                     </div>
                 </form>
             </div>
-        </Wrapper>
+        </>
     );
 };
 

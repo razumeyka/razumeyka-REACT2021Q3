@@ -26,14 +26,27 @@ body {
   font-size: 16px;
 }
 
-.rss-app {
-  padding: 100px 0;
-}
-
 .heading {
   font-size: 46px;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.error-screen {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+}
+
+.error-heading {
+  font-size: 86px;
+  font-weight: 700;
+  color: #1db453;
+  margin-bottom: 20px;
 }
 
 select {
