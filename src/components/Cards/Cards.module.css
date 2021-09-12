@@ -1,0 +1,15 @@
+.plates-screen {
+    padding: 50px 0;
+}
+
+.plates {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+}
+
+.item {
+    box-sizing: border-box;
+    width: 33.3333%;
+    padding: 20px;
+}
