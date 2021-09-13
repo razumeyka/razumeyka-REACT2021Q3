@@ -26,10 +26,21 @@ body {
   font-size: 16px;
 }
 
+.screen-wrap {
+  padding: 40px 0 60px;
+}
+
 .heading {
   font-size: 46px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+}
+
+.descr {
+  font-size: 20px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
 }
 
 .error-screen {
@@ -57,4 +68,20 @@ select {
     border: 1px solid #e3e3e3;
     padding: 0 40px 0 20px;
     font-size: 16px;
+}
+
+@media screen and (max-width: 639px) {
+  .screen-wrap {
+    padding: 20px 0 40px;
+  }
+  
+  .heading {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .descr {
+    font-size: 16px;
+    margin: 0 auto 30px;
+  }
 }

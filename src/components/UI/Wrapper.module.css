@@ -3,3 +3,9 @@
     padding: 0 40px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 1279px) {
+    .wrapper {
+        padding: 0 15px;
+    }
+}

@@ -31,3 +31,14 @@
 .nav-item a.nav-item-active {
     color: #f0a705;
 }
+
+@media screen and (max-width: 639px) {
+    .navbar {
+        margin: 0 -7px;
+    }
+    .nav-item {
+        font-size: 14px;
+        padding: 20px 7px;
+    }
+}
+

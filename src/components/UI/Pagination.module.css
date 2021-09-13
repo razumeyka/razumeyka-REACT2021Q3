@@ -29,3 +29,9 @@
 .button-active {
     border: 1px solid #f0ae19;
 }
+
+@media screen and (max-width: 767px) {
+    .list {
+        flex-wrap: wrap;
+    }
+}
