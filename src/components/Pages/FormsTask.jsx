@@ -12,10 +12,14 @@ const FormsTask = () => {
     };
 
     return (
-        <Wrapper>
-            <Form saveRequests={saveNewRequest} />
-            <PersonsCards items={requests}/>
-        </Wrapper>
+        <div className="screen-wrap">
+            <Wrapper>
+                <h1 className="heading">Form</h1>
+                <div className="descr">This task shows work with form validation and entered data. You can add new cards, when you fill the form.</div>
+                <Form saveRequests={saveNewRequest} />
+                <PersonsCards items={requests}/>
+            </Wrapper>
+        </div>
     );
 }
 

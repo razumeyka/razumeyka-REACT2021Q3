@@ -10,9 +10,9 @@ const Header = () => (
         <Wrapper>
             <ul className={classes.navbar}>
                 <li className={classes['nav-item']}><NavLink activeClassName={classes['nav-item-active']} to="/about">About</NavLink></li>
-                <li className={classes['nav-item']}><NavLink activeClassName={classes['nav-item-active']} to="/components">Task &quot;Components&quot;</NavLink></li>
-                <li className={classes['nav-item']}><NavLink activeClassName={classes['nav-item-active']} to="/forms">Task &quot;Forms&quot;</NavLink></li>
-                <li className={classes['nav-item']}><NavLink activeClassName={classes['nav-item-active']} to="/api">Task &quot;API&quot;</NavLink></li>
+                <li className={classes['nav-item']}><NavLink activeClassName={classes['nav-item-active']} to="/components">Components</NavLink></li>
+                <li className={classes['nav-item']}><NavLink activeClassName={classes['nav-item-active']} to="/forms">Forms</NavLink></li>
+                <li className={classes['nav-item']}><NavLink activeClassName={classes['nav-item-active']} to="/api">API</NavLink></li>
             </ul>
         </Wrapper>
     </header>

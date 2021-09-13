@@ -81,9 +81,10 @@ const apparts = [
 ];
 
 const Cards = () => (
-    <div className={classes['plates-screen']}>
+    <div className="screen-wrap">
         <Wrapper>
             <h1 className="heading">Appartments</h1>
+            <div className="descr">This task is just static. It displays data from the array into a list of cards. On click event on the card it routes another page with parameters of this card</div>
             <div  className={classes.plates}>
                 { apparts.map( (item) => 
                     <div key={item.id} className={classes.item}>

@@ -1,15 +1,18 @@
 .main-screen {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #1cbe56;
     color: #fff;
-    padding: 100px;
+    padding: 50px;
     text-align: center;
 }
 
 .heading {
     font-size: 52px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
 }
 
 .subheading {
@@ -24,4 +27,32 @@
 
 .subheading a:hover {
     color: #f0a705;
+}
+
+@media screen and (max-width: 1279px) {
+    .main-screen {
+        padding: 15px;
+    }
+    
+    .heading {
+        font-size: 46px;
+    }
+    
+    .subheading {
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+@media screen and (max-width: 767px) {
+ 
+    .heading {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    
+    .subheading {
+        font-size: 18px;
+        line-height: 1.4;
+    }
 }

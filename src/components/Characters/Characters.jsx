@@ -87,10 +87,11 @@ const Characters = () => {
 
 
     return (
-        <div className={classes['characters-screen']}>
+        <div className="screen-wrap">
             <Wrapper>
                 <h1 className="heading">The Lord of the Rings</h1>
-                <form onSubmit={submitHandler}>
+                <div className="descr">Interaction with API <a href="https://the-one-api.dev/" target="_blank" rel="noreferrer">The Lord of the Rings</a>: fetching data, sorting, searching and pagination</div>
+                <form onSubmit={submitHandler} className={classes['search-line']}>
                     <Input type="text" placeholder="Search character by name" value={searchName} onChange={searchHandler} />
                     <Button variant="button--orrange" content="Search"/>
                 </form>

@@ -1,15 +1,15 @@
 .card {
 	height: 100%;
 	box-sizing: border-box;
-	background-color: #000;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid #DFDFDF;
 	border-radius: 4px;
 	padding: 25px 20px;
-	color: #fff;
 	text-align: left;
 }
 
 .card:hover {  
-    box-shadow: 0 4px 8px rgba(0,0,0,.7);
+    box-shadow: 0 4px 26px rgba(0,0,0,.25);
 }
 
 .card-title {

@@ -1,10 +1,8 @@
-.characters-screen {
-    padding: 70px 0;
+.search-line {
     text-align: center;
 }
 
 .sort-line {
-    text-align: left;
     max-width: 260px;
     margin-top: 50px;
 }
@@ -26,4 +24,34 @@
     box-sizing: border-box;
     width: 20%;
     padding: 10px;
+}
+
+@media screen and (max-width: 1279px) {
+    .list-item {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .list-item {
+        width: 33.3333%;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .search-line {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .search-line button {
+        margin-top: 10px;
+    }
+
+    .list-item {
+        width: 100%;
+    }
 }
