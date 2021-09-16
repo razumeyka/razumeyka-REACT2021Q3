@@ -12,7 +12,7 @@ import place6 from '../../assets/images/place6.jpg';
 const apparts = [
     {
         id: "ap1",
-        name: "Sunny Appart",
+        name: "Sunny Apart",
         picture: place1,
         price: "30 000",
         credit: "4 000/month",
@@ -23,7 +23,7 @@ const apparts = [
     },
     {
         id: "ap2",
-        name: "Not sunny Appart",
+        name: "Not sunny Apart",
         picture: place2,
         price: "20 000",
         credit: "3 000/month",
@@ -34,7 +34,7 @@ const apparts = [
     },
     {
         id: "ap3",
-        name: "New sunny Appart",
+        name: "New sunny Apart",
         picture: place3,
         price: "35 000",
         credit: "4 000/month",
@@ -45,7 +45,7 @@ const apparts = [
     },
     {
         id: "ap4",
-        name: "New not sunny Appart",
+        name: "New not sunny Apart",
         picture: place4,
         price: "20 000",
         credit: "3 000/month",
@@ -56,7 +56,7 @@ const apparts = [
     },
     {
         id: "ap5",
-        name: "Sunny Appart",
+        name: "Sunny Apart",
         picture: place5,
         price: "30 000",
         credit: "4 000/month",
@@ -67,7 +67,7 @@ const apparts = [
     },
     {
         id: "ap6",
-        name: "Not sunny Appart",
+        name: "Not sunny Apart",
         picture: place6,
         price: "20 000",
         credit: "3 000/month",

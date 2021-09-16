@@ -8,7 +8,7 @@ import classes from './Details.module.css';
 const Details = (props) => (
     <div className={classes['appart-screen']}>
         <Wrapper>
-            <h1 className="heading">Appartment {props.item.name}</h1>
+            <h1 className="heading">Apartment {props.item.name}</h1>
             <div className={classes.plate}>
                 <div className={classes.photo}>
                     <div className={classes.favorite}>
